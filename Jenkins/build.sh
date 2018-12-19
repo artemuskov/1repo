@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo 'Hello Jenkins!'
-echo 'Hook test!22'
+echo 'Hook test!222'

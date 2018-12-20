@@ -36,7 +36,7 @@ function main() {
   # Parse the arguments from the commandline.
   while [[ ${#} -gt 0 ]]; do
     case "${1}" in
-      --version)              version="${1}"; shift;;
+      --version)              version="${2}"; shift;;
       -h|--help)              usage; exit 0;;
       --)                     break;;
       -*)                     usage_error "Unrecognized option ${1}";;

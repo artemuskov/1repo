@@ -33,6 +33,7 @@ function deploy() {
   aws cloudformation create-stack                       \
     --stack-name "${stack_name}"                        \
     --region "${region}"                                \
+    --capabilities CAPABILITY_IAM                       \
     --template-body file://$(dirname $0)/cfn.yaml       \
     --parameters ${params}
 }

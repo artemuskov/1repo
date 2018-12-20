@@ -82,7 +82,7 @@ function main() {
   deploy                  \
     "${version}"          \
     "${region}"           \
-    "${stack_name}"       \
+    "${stack_name}"
 }
 
 main "${@:-}"
